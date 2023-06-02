@@ -1,0 +1,630 @@
+/*
+Index
+-------
+
+01. Reset CSS
+02. Header Area
+03. Banner Area
+04. About Area
+05. Services Area
+06. Resumes Area
+07. Projects Area
+08. Pricing Area
+09. Contact Area
+10. Footer Area
+*/
+
+/* Reset CSS Start*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+body{
+    font-family: 'Lexend', sans-serif;
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* Reset CSS End*/
+
+/* Header Area CSS Start*/
+.header-area {
+	background-color: #1f1f1f;
+	padding-top: 28px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 99;
+    top:20px;
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 20px 0;
+    padding: 15px 16px;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: #E9204F;
+    border-radius: 5px;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    transition: .5s;
+ }
+ .logo a:hover{
+   color: black;
+ }
+ .menu ul {
+    list-style: none;   
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0;
+}
+.menu ul li {
+    padding-left: 22px;
+}
+.menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .4s;
+    scroll-behavior: smooth;
+}
+.menu ul li a:hover{
+    color: black;
+}
+
+.icon a i {
+    font-size: 16px;
+    color:#fff;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 15px;
+    text-align: center;
+    transition: 0.7s;
+}
+.icon a i:hover{
+    color: black;
+}
+/*Header Arrea CSS End */
+
+/*Banner Area CSS Start*/
+.banner-area {
+    padding: 200px 0 80px;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background-color: #1f1f1f;
+    color: #fff; 
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.banner-contant {
+    flex-basis: 50%;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner-contant h6 {
+    font-size: 30px;
+    text-transform: capitalize;  
+}
+.banner-contant h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-weight: 700;
+}
+.banner-contant h2 span {
+  color: #ff014f;
+}
+.banner-contant h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.banner-contant p{
+    font-size:18px;
+    text-transform: capitalize;
+}
+.banner-contant a{
+    margin-top:30px;
+}
+.btn {
+	display: inline-block;
+	background-color: #ff014f;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 10px;
+	font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: .3s;
+}
+.btn i {
+	padding: 0px 10px;
+}
+.btn:hover {
+	background-color: transparent;
+	border-color: #ff014f;
+}
+/*Banner Area CSS End*/
+
+/*About Area CSS Start*/
+.about-area {
+    padding: 100px 0;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+  .about-img img {
+    width: 90%;
+}
+.about-content {
+    flex-basis: 50%;
+}  
+.about-content h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.about-content h2 {
+    font-size: 40px;
+    line-height: 45px;
+    text-transform: capitalize;
+    margin: 10px 0 20px;
+}
+.about-content p{
+    font-size: 17px;
+    line-height: 23px;
+    color: black;
+    padding-top: 18px;
+    font-weight: 700;
+}
+.about-info {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 45px 0;
+}
+.about-info a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color:#fff;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.about-info a:hover{
+    border-color: #E9204F;
+    color: black;
+    background-color:transparent;
+    font-weight: 700;
+}
+.about-list li{
+    list-style: none;
+    padding: 15px 0;
+    color: #ff014f;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-bottom: 2px dashed black;
+    font-weight: 700;
+}
+.about-list ul li span{
+    color: black;
+    font-weight: 700;
+}
+/* About Area CSS End*/
+
+ /* Services Area CSS Start*/
+.services-area {
+	padding: 50px 0px 70px;
+}
+.service-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.service-title h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single-service {
+	background-color: antiquewhite;
+	padding: 25px;
+	flex-basis: 32%;
+	text-align: center;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	transition: .3s;
+	border-color: black;
+}
+
+.single-service i {
+  background-color:#ff014f;
+  color: #ddd;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  transition: .3s;
+}
+.single-service:hover{
+  border-color: #ff014f; 
+}
+.single-service:hover i{
+  color:#ddd;
+  background-color: #1f1f1f;
+}
+.single-service h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 25px 0px;
+}
+/* Services Area CSS End*/
+
+ /* Resumes Area CSS Start*/ 
+.resume-area {
+    background-color: #1f1f1f;
+    padding: 100px 0 70px;
+    text-align: center;
+}
+.section-title {
+	margin-top: 35px;
+	color: #fff;
+}
+.section-title h3 {
+	font-size: 22px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.section-title h2 {
+	font-size: 32px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.resume {
+	margin-top: 80px;
+}
+.single-resume {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border: 1px solid transparent;
+	background-color: #E9204F;
+	border-radius: 7px;
+	margin: 30px 50px 0;
+	padding: 10px 50px;
+}
+.single-resume:last-child{
+  margin-bottom: 30px;
+}
+.single-resume h4 {
+  color: white;
+  font-size: 17px;
+}
+.single-resume h2 {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: white;
+}
+.single-resume h3 {
+	color: white;
+	font-size: 17px;
+	text-transform: capitalize;
+	margin: 0 66px;
+}
+.single-resume p {
+  font-size: 17px;
+  color: white;
+  text-transform: capitalize;
+}
+/* Resumes Area CSS End*/
+
+/* Projects Area CSS Start*/
+.project-area {
+  padding: 100px 0 70px;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.single-projects {
+  flex-basis: 32%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: .3s;
+  z-index: 2;
+  transform: scale(0);
+  opacity:0;
+  visibility: hidden;
+}
+.project-content h4 {
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #ddd;
+}
+.project-content h4 span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400px;
+  margin-top: 10px;
+}
+.project-content:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: .9;
+  z-index: -1;
+}
+.single-projects:hover .project-content{
+opacity:1;
+visibility: visible;
+transform: scale(1);
+transition: .6s;
+}
+/* Projects Area CSS End*/
+
+/* Pricing Area CSS Start*/
+.pricing-area {
+	background-color:  #1f1f1f;
+	padding: 100px 0 70px;
+}
+.pricing-contant {
+  position: relative;
+}
+.pricing-contant h3 {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  padding-top: 30px;
+}
+.pricing-contant h1 {
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 40px;
+}
+.prices {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 40px 80px;
+}
+.single-price {
+  flex-basis: 320px;
+  border: 1px solid transparent;
+  padding: 50px;
+  background: white;
+  border-radius: 5px;
+}
+.single-price h4 {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+  color: black;
+}
+.single-price h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 13px;
+  color: black;
+}
+.single-price ul li {
+  padding: 15px 0;
+  border-bottom: 1px dotted black;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.single-price h4 {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+  color: black;
+}
+.single-price h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 13px;
+  color:black;
+}
+.btn1{
+  display: inline-block;
+	background-color: #ff014f;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:white;
+	padding: 10px 10px;
+  margin: 30px;
+	font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: .3s;
+}
+.btn1:hover{
+  color:#ff014f;
+  background-color: white; 
+  border-color: #ff014f;
+}
+/* Pricing Area CSS End*/
+
+/* Contact Area CSS Start*/
+.contact-area {
+	background-color: #fff;
+	padding: 100px 0 70px;
+	text-align: center;
+}.contact-section-title h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+.contact-form {
+  flex-basis: 50%;
+  margin: 16px 0;
+}
+.contact-form a{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.contact-form input, .contact-form textarea {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid transparent;
+	margin: 10px 0;
+	background-color: #ddd;
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 5px;
+}
+.contact-form textarea {
+  margin-bottom: 20px;
+}
+.contact-info {
+  flex-basis: 30%;
+}
+.single-contact {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 15px 0;
+  border: 1px solid transparent;
+  background: white;
+  padding: 5px 15px;
+  border-radius: 7px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.single-contact i {
+  width: 40px;
+  height: 45px;
+  border: 1px solid transparent;
+  line-height: 45px;
+  text-align: center;
+  background-color: #E9204F;
+  margin: 10px 0;
+  color: white;
+  border-radius: 50%;
+  border:1px solid #ddd;
+  transition: .5s;
+}
+.single-contact i:hover{
+    color: black;
+    background-color:transparent;
+    border-color:black;
+}
+.single-contact h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 20px;
+  color: black;
+}
+.single-contact h2 span {
+  display: block;
+  text-transform: uppercase;
+  line-height: 25px;
+  font-size: 15px;
+}
+/* Contact Area CSS End/
+
+/* Footer Area CSS Start*/
+.footer-area {
+  background-color: #1f1f1f;
+}
+.footer-img {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 465px;
+  margin-bottom: 15px;
+}
+.footer-img a {
+  flex-basis: 63px;
+  padding-top: 34px;
+}
+.footer-img a i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  transition:.3s;
+  border: 3px solid #ff014f;
+  border-radius:50%;
+  transition: .3s;
+}
+.footer-img a i:hover{
+  border-color: #ddd;
+  background-color: #ff014f;
+}
+.copyright p {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-transform: capitalize;
+  padding: 0  10px;
+}
+/* Footer Area CSS End*/
